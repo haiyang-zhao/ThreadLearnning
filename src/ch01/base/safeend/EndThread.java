@@ -11,7 +11,7 @@ public class EndThread {
             super.run();
             String threadName = Thread.currentThread().getName();
             System.out.println(threadName + " interrupt flag =" + isInterrupted());
-            while (!Thread.interrupted()){//outer interrupt flag 会是true
+            while (!Thread.interrupted()) {//outer interrupt flag 会是true
 //            while (!isInterrupted()) {
                 System.out.println(threadName + " is running");
                 System.out.println(threadName + " inner interrupt flag ="

@@ -7,7 +7,7 @@ import tools.SleepTools;
  */
 public class ThreadLocalUnsafe implements Runnable {
 
-    public static Number number = new Number(0);
+    public  Number number = new Number(0);
 
     public void run() {
         //每个线程计数加一
